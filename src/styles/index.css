@@ -1,0 +1,462 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.5625rem 6.25rem;
+
+  background-color: var(--gray_1);
+  color: var(--whiteFixed);
+
+  position: sticky;
+  top: 0;
+
+  z-index: 1;
+}
+
+.header__container > h1 {
+  font-size: var(--title_2);
+}
+
+.header__container > span {
+  cursor: pointer;
+  font-size: var(--text_2);
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  align-items: center;
+
+  position: relative;
+}
+
+.main__top {
+  display: flex;
+  justify-content: flex-start;
+
+  width: 100%;
+  margin-top: 5%;
+}
+
+.section__top--post {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 3%;
+
+  gap: 20px;
+}
+
+.post__user {
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+}
+
+.img__icon {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.user__detals {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.user__detals > h3 {
+  font-size: var(--title_2);
+}
+
+.user__detals > p {
+  font-size: var(--text_2);
+}
+
+.section__top--post {
+  width: 60%;
+}
+
+.section__top--post > input,
+.section__top--post > textarea {
+  padding: 10px;
+
+  border-radius: 5px;
+  border: solid 2px var(--gray_4);
+}
+
+.section__top--post > input:focus,
+.section__top--post > textarea:focus {
+  border: solid 2px var(--blue_1);
+}
+
+#description {
+  resize: none;
+  font-family: "Inter", sans-serif;
+  font-size: var(--text_1);
+}
+
+#description::placeholder,
+.section__top--post > input {
+  font-family: "Inter", sans-serif;
+  font-size: var(--text_1);
+}
+
+.button__div {
+  position: relative;
+
+  width: 100%;
+  height: 15%;
+}
+
+.button__pub {
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+
+  padding: 0.5rem 0.75rem;
+
+  border-radius: 5px;
+  border: solid 1px var(--blue_1);
+
+  background-color: var(--blue_1);
+  color: var(--whiteFixed);
+
+  cursor: pointer;
+}
+
+.button__pub:hover {
+  background-color: var(--blue_2);
+}
+
+.section__top--sugest {
+  display: flex;
+  flex-direction: column;
+
+  width: 30%;
+  height: 100%;
+
+  position: absolute;
+
+  right: 50px;
+}
+
+.sugest__div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+
+  position: sticky;
+
+  top: 50px;
+}
+
+.sugest__div > h2 {
+  font-size: var(--title_2);
+
+  font-weight: bold;
+}
+
+.perfils {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 30px;
+}
+
+.sugest__post__user {
+  display: flex;
+
+  position: relative;
+
+  gap: 15px;
+}
+
+.sugest__user__detals {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.sugest__user__detals > h3 {
+  font-size: var(--title_2);
+}
+
+.sugest__user__detals > p {
+  font-size: var(--text_2);
+}
+
+.button__follow {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  padding: 0.25rem 0.8125rem;
+
+  border: solid 1px var(--gray_0);
+  border-radius: 3px;
+
+  background-color: var(--whiteFixed);
+
+  font-weight: 550;
+
+  cursor: pointer;
+}
+
+.button__follow:hover {
+  border: solid 1px var(--blue_1);
+
+  color: var(--blue_1);
+}
+
+.button__following {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  padding: 0.25rem 0.8125rem;
+
+  border: solid 1px var(--blue_1);
+  border-radius: 3px;
+
+  background-color: var(--blue_1);
+  color: var(--whiteFixed);
+
+  font-weight: 550;
+
+  cursor: pointer;
+}
+
+.button__following:hover {
+  background-color: var(--blue_2);
+}
+
+.section__posts {
+  display: flex;
+  flex-direction: column;
+
+  width: 95%;
+
+  gap: 37px;
+}
+
+.article__post {
+  display: flex;
+  flex-direction: column;
+
+  gap: 37px;
+
+  width: 60%;
+}
+
+.article__post > h2 {
+  font-size: var(--title_1);
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+
+.article__post > p {
+  color: var(--gray_3);
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.button__andLike {
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+}
+
+.button__open--article {
+  background-color: var(--gray_1);
+  color: var(--whiteFixed);
+
+  border: solid 1px var(--gray_1);
+  border-radius: 3px;
+
+  padding: 5px 8px;
+
+  cursor: pointer;
+}
+
+.button__open--article:hover {
+  background-color: var(--gray_0);
+}
+
+.div__like {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.like {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+
+  background-image: url("./../assets/img/curtir.svg");
+
+  background-repeat: no-repeat;
+}
+
+.like--like {
+  cursor: pointer;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("./../assets/img/curtiu.svg");
+  background-repeat: no-repeat;
+}
+
+.footer__container {
+  height: 60px;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 120%;
+
+  background-color: rgb(0, 0, 0, 0.5);
+
+  position: absolute;
+
+  top: -10%;
+
+  z-index: 1;
+}
+
+.modal__container {
+  display: flex;
+  flex-direction: column;
+
+  width: 600px;
+  height: 400px;
+
+  padding: 3%;
+
+  position: sticky;
+  top: 50px;
+
+  background-color: var(--whiteFixed);
+  gap: 50px;
+}
+
+.modal__container > div {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.button__close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px; 
+  right: 0;
+}
+
+.modal__container > h2 {
+  font-size: var(--title_1);
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+
+.modal__container > p {
+  color: var(--gray_3);
+  height: 90%;
+  overflow: auto;
+}
+
+@media (max-width: 655px) {
+  .main__top {
+    flex-direction: column;
+  }
+  .section__top--post {
+    width: 90%;
+    margin: 4%;
+  }
+  .button__pub {
+    bottom: -30px;
+  }
+  .section__top--sugest {
+    width: 100vw;
+
+    position: inherit;
+  }
+  .sugest__div {
+    flex-direction: column;
+
+    position: inherit;
+    
+    width: 87.5%;
+    
+    margin: 41px 0 42px 30px;
+
+    padding: 30px 0 36px 0;
+
+    border-top: solid 2px var(--gray_3);
+    border-bottom: solid 2px var(--gray_3);
+  }
+  .perfils {
+    flex-direction: row;
+
+    overflow-x: scroll;
+
+    flex-wrap: nowrap;
+
+    position: relative;
+  }
+  .sugest__post__user {
+    margin-bottom: 50px;
+  }
+   .sugest__post__user > div {
+    width: 200px;
+  } 
+  .button__follow {
+    position: absolute;
+
+    height: 30px;
+    width: 110px;
+
+    top: 60px;
+    left: 0px;
+  }
+  .button__following {
+    position: absolute;
+
+    height: 30px;
+    width: 110px;
+
+    top: 60px;
+    left: 0px;
+  }
+}
+
+@media (min-width: 656px) and (max-width: 850px) {
+  .section__top--post {
+    width: 55%;
+  }
+  .button__follow {
+    position:unset;
+  }
+  .button__following {
+    position:unset;
+  }
+}

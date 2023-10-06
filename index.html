@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrega - Rede Social</title>
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/globalStyle.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+  </head>
+  <body>
+    <header class="header__container">
+      <h1>TechPosters</h1>
+      <span>Sair</span>
+    </header>
+    <main class="main__container">
+      <div class="main__top">
+        <section class="section__top--post">
+          <div class="post__user">
+            <img
+              class="img__icon"
+              src="./src/assets/img/user1.svg"
+              alt="icon"
+            />
+            <div class="user__detals">
+              <h3>Samuel Leão</h3>
+              <p>Front end Enginer</p>
+            </div>
+          </div>
+          <input type="text" class="title" placeholder="Digitar título do post" />
+          <textarea
+            name="text"
+            id="description"
+            cols="30"
+            rows="10"
+            placeholder="Digitar descrição do post"
+          ></textarea>
+          <div class="button__div">
+            <button class="button__pub">Postar</button>
+          </div>
+        </section>
+        <section class="section__top--sugest">
+          <div class="sugest__div">
+            <h2>susgestões para você seguir</h2>
+            <div class="perfils"></div>
+          </div>
+        </section>
+      </div>
+      <section class="section__posts">
+        <h2>Posts</h2>
+      </section>
+    </main>
+    <footer class="footer__container"></footer>
+    <script src="./src/scripts/posts.js"></script>
+    <script src="./src/scripts/sugestUsers.js"></script>
+    <script src="./src/scripts/users.js"></script>
+    <script src="./src/scripts/index.js"></script>
+  </body>
+</html>
