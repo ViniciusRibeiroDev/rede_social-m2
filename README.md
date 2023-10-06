@@ -1,4 +1,4 @@
-<h1>Rede Social</h1>
+<h1>Tech Posters</h1>
 
 Criado por: Vinícius Ribeiro.
 
